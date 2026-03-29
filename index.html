@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>.NET 全栈学习路线</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { 
+            font-family: "Microsoft YaHei", "Segoe UI", Arial, sans-serif;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            min-height: 100vh;
+            color: white;
+            padding: 40px 20px;
+        }
+        .container { max-width: 900px; margin: 0 auto; }
+        h1 { 
+            font-size: 2.5em; 
+            color: #00d4ff; 
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        .subtitle {
+            text-align: center;
+            color: #ffd700;
+            font-size: 1.2em;
+            margin-bottom: 40px;
+        }
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            margin-top: 30px;
+        }
+        .card {
+            background: rgba(255,255,255,0.05);
+            border: 1px solid rgba(0,212,255,0.3);
+            border-radius: 16px;
+            padding: 30px;
+            transition: all 0.3s;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            border-color: #00d4ff;
+            box-shadow: 0 10px 40px rgba(0,212,255,0.2);
+        }
+        .card h2 { 
+            color: #00d4ff; 
+            font-size: 1.4em;
+            margin-bottom: 15px;
+        }
+        .card p { 
+            color: rgba(255,255,255,0.7);
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+        .card a {
+            display: inline-block;
+            padding: 12px 24px;
+            background: #00d4ff;
+            color: #1a1a2e;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+        .card a:hover { background: #ffd700; }
+        .tag {
+            display: inline-block;
+            padding: 4px 12px;
+            background: rgba(0,212,255,0.2);
+            color: #00d4ff;
+            border-radius: 20px;
+            font-size: 0.85em;
+            margin-right: 8px;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 50px;
+            color: rgba(255,255,255,0.4);
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>.NET 全栈学习路线</h1>
+        <p class="subtitle">从入门到接单赚外快，再到 .NET 架构师</p>
+        
+        <div class="cards">
+            <div class="card">
+                <h2>📚 总览 PPT</h2>
+                <p>学习路线全景图，包含各阶段目标、里程碑、立即行动清单</p>
+                <span class="tag">14 页</span>
+                <span class="tag">入门必看</span>
+                <br><br>
+                <a href="presentation.html">打开演示</a>
+            </div>
+
+            <div class="card">
+                <h2>Part 1：Week 1-8</h2>
+                <p>WebAPI 基础：环境搭建、CRUD、数据库操作、爬虫、Excel、接单攻略</p>
+                <span class="tag">约 25 页</span>
+                <span class="tag">入门阶段</span>
+                <br><br>
+                <a href="part1-weeks1-8.html">打开教程</a>
+            </div>
+
+            <div class="card">
+                <h2>Part 2：Week 9-16</h2>
+                <p>WebAPI 进阶：Redis、RabbitMQ、JWT、限流、Docker、微服务、CI/CD</p>
+                <span class="tag">约 25 页</span>
+                <span class="tag">中级阶段</span>
+                <br><br>
+                <a href="part2-weeks9-16.html">打开教程</a>
+            </div>
+
+            <div class="card">
+                <h2>Part 3：架构师路线</h2>
+                <p>GC、IOC、内存管理、设计模式、CAP、微服务组件、高并发、面试题</p>
+                <span class="tag">约 25 页</span>
+                <span class="tag">进阶阶段</span>
+                <br><br>
+                <a href="part3-architecture.html">打开教程</a>
+            </div>
+
+            <div class="card">
+                <h2>📖 Markdown 教程</h2>
+                <p>详细的文字教程，包含代码示例、作业安排、可直接在 VS Code 中阅读</p>
+                <span class="tag">.md 文件</span>
+                <span class="tag">深度阅读</span>
+                <br><br>
+                <a href="README.md">打开目录</a>
+            </div>
+        </div>
+
+        <p class="footer">
+            键盘 ← → 或点击按钮翻页 | 按 F 全屏<br>
+            学习愉快！有问题随时联系
+        </p>
+    </div>
+</body>
+</html>
